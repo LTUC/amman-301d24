@@ -203,3 +203,4 @@ console.log(joe.scopeArrow());
 // The output it will be realted Window object.
 // 3. Explain why "this" is different when an arrow function is used.
 // I dont know why.
+
