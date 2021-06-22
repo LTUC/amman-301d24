@@ -2,7 +2,7 @@
 
 // STEP 1
 // This is a standard function expression. You may also be familiar with function declarations, which begin with the "function" keyword.
-const theOldWay = (course)=> {
+const theOldWay = function(course) {
   return `I am currently enrolled in ${course}`;
 };
 
@@ -44,7 +44,7 @@ console.log('As a one-liner:', oneLiner('Code 301'));
 // STEP 5
 // What if we have multiple parameters?
 // In a function expression, they all go in the parentheses
-const add =(num1, num2)=> {
+const add = function(num1, num2) {
   return `${num1} + ${num2} = ${num1 + num2}`;
 };
 
@@ -76,7 +76,7 @@ console.log('Multi-line arrow function:', multiLiner('hello'));
 // STEP 8
 // The way an object is returned is different with an arrow function, too.
 // Here is how we return an object without arrow functions
-const oldObject = (array)=> {
+const oldObject = function(array) {
   return {
     firstValue: array[0],
     secondValue: array[1],
@@ -116,7 +116,7 @@ let sum = (a, b, c, d)=> {
 console.log(sum(1, 2, 3, 4));
 
 
-let objectLit = ()=> {
+let objectLit = () =>{
   return {
     key1: 'value1',
     key2: 'value2',
@@ -138,7 +138,7 @@ let sumAndProduct = (a, b)=> {
 console.log(sumAndProduct(3, 9));
 
 
-let message =(name)=> {
+let message = (name)=> {
   return `Hello, ${name}!`;
 };
 
@@ -161,7 +161,7 @@ console.log(joe);
 // TODO: After viewing the previous console.log(), return the code to a working state.
 
 
-Student.prototype.greeting = () =>{
+Student.prototype.greeting = function() {
   return `Hi, my name is ${this.name}`;
 };
 
@@ -173,7 +173,7 @@ console.log(joe.greeting());
 
 
 
-Student.courseName = ()=> {
+Student.courseName = ()=>{
   return 'This student is enrolled in Code 301.';
 };
 
@@ -202,5 +202,6 @@ console.log(joe.scopeArrow());
 // 2. What is "this" when joe.scopeArrow() is invoked?
 // The output it will be realted Window object.
 // 3. Explain why "this" is different when an arrow function is used.
-// becuse the arrow function its bulid in differnt way that normal function bulid and the arrow function Its not dealing with prototype as normal function do.
+// becuse the arrow function its bulid in differnt way that normal function bulid and the arrow function Its not dealing with prototype as normal function.
+
 
