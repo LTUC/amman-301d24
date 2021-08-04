@@ -204,3 +204,5 @@ Student.prototype.scopeArrow = () => console.log(this);
 //
 // 3. Explain why "this" is different when an arrow function is used.
 //
+
+
